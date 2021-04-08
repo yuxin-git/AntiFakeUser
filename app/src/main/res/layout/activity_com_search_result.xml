@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComSearchResultActivity">
+
+    <TextView
+        android:id="@+id/textView_brand_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:text="防伪溯源结果"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_brand_title" />
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="579dp"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_brand_title">
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-------------------------------------------------------------------------------------" />
+
+        <TextView
+            android:id="@+id/textView_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加载中......"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-------------------------------------------------------------------------------------" />
+
+        <TextView
+            android:id="@+id/textView_manu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加载中......"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/button_manu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="..." />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-------------------------------------------------------------------------------------" />
+
+        <TextView
+            android:id="@+id/textView_regu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加载中..."
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/button_regu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="..." />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-------------------------------------------------------------------------------------" />
+
+        <TextView
+            android:id="@+id/textView_dealer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加载中..."
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/button_de"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="..." />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">商品防伪认证系统(用户版)</string>
+
+    <!--chainsql相关配置-->
+    <string name="severIP_1">ws://192.168.190.128:6006</string>
+    <string name="severIP_2">ws://192.168.190.129:6006</string>
+    <string name="severIP_3">ws://192.168.190.130:6006</string>
+    <!--用户查询专用账户和密钥，固定不变，仅有查询权限-->
+    <string name="client_address">zpncip6ZUTrfqz3nSHpix4eQyMS4F1KM83</string>
+    <string name="client_secret">xnaUqqt6Nb6ysdyXWewu7u2UxBAAD</string>
+
+</resources>
