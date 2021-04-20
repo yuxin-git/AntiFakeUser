@@ -135,7 +135,7 @@ public class ComSearchActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                cClient.connect(getString(R.string.severIP_1));
+                cClient.connect(getString(R.string.severIP_2));
                 cClient.connection.client.logger.setLevel(Level.SEVERE);
                 cClient.as(getString(R.string.client_address),getString(R.string.client_secret));
                 String tableCom = "com_infor";

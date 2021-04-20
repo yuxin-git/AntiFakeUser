@@ -38,12 +38,13 @@ public class QualifySearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qualify_search);
+        editTextName=findViewById(R.id.editText_name);
         btnSearch=findViewById(R.id.button_search);
         btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 name= editTextName.getText().toString();
-                if(null==name) {
+                if(name.equals(null)) {
                     Toast.makeText(QualifySearchActivity.this, "输入为空！", Toast.LENGTH_LONG).show();
                 } else{
                     Handler handler= new Handler() {
@@ -75,7 +76,7 @@ public class QualifySearchActivity extends AppCompatActivity {
                                                 String result="商家名称："+name
                                                         +"\n商家账户："+searchAddress
                                                         +"\n------------------------------------------"
-                                                        +"\n授权交易区块信息"
+                                                        +"\n授权交易区块信息\n"
                                                         +"\n交易账户："+textAccount
                                                         +"\n区块高度："+ledgerNum
                                                         +"\n交易HASH："+textHash
@@ -139,6 +140,8 @@ public class QualifySearchActivity extends AppCompatActivity {
         int accountLed= 0;
         String t=null;
         try {
+            searchAddress=obj.getJSONArray("lines")
+                    .getJSONObject(0).getString("AccountAdd");
             accountLed = Integer.parseInt(obj.getJSONArray("lines")
                     .getJSONObject(0).getString("AccountLedger"));
             t=cClient.getLedger(accountLed).getJSONObject("ledger")
